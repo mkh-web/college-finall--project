@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyond Aden Bridge || seller page</title>
+
+
+    <link rel="shortcut icon" href="../../public/xd.png" type="image/x-icon">
+
+
+    <link rel="stylesheet" href="seller.css">
+    <link rel="stylesheet" href="sellerbody.css">
+    <link rel="stylesheet" href="./../loading/loading.css">
+
+        <!---cdn 
+        حق التشارت و برضو خليتها هنا عشان تقدر تعدل ع الارقام ب php-->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+   
+</head>
+<body dir="rtl">
+
+ 
+
+     <div class="intro ">
+         <h1 class="logo-header">
+             <span class="logo">مرحبا</span>
+             <span class="logo">في</span>
+             <span class="logo">صفحة </span>
+             <span class="logo">البائع</span>
+            </h1>
+        </div>
+  
+
+    <!---حق الجوال بس-->
+        <div class="openlist" id="bodylist">
+            <div>
+             <nav>
+             <ul class="list2">
+                <li><button><a href="#">الصفحة الرئيسية</a></button></li>
+                <li><button><a href="./showproduct/showproduct.html"> منتجاتي</a></button></li>
+                <li><button><a href="./add_product/addproductt.html"> اضافة منتج</a></button></li>
+                <li><button><a href="./settings/settings.html"> اعدادات</a></button></li>
+
+                 
+                 <li><button><a href="./../sginin/signin.html">  عودة</a></button></li>
+                 <li><button id="close"><a href="#">اغلق القائمة</a></button></li>
+                 
+             </ul>
+         </nav>
+     </div>
+     </div>
+    
+    <header>
+        <div class="header_continer animate__animated animate__bounce">
+
+            <div> 
+                <img src="./../../public/xd.png" alt="" srcset="" width="25px" height="25px">
+            </div>
+            <div>
+                <nav>
+                <ul class="list">
+                    <li><button><a href="#">الصفحة الرئيسية</a></button></li>
+                    <li><button><a href="./showproduct/showproduct.html"> منتجاتي</a></button></li>
+                    <li><button><a href="./add_product/addproductt.html"> اضافة منتج</a></button></li>
+                    <li><button><a href="./settings/settings.html"> اعدادات</a></button></li>
+                    
+                </ul>
+            </nav>
+        </div>
+
+        <div class="logout"><button><a href="./../sginin/signin.html"> 
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="return-icon bi bi-arrow-return-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5"/>
+              </svg>
+        </a></button>
+    </div>
+    <div class="btntoopenlist">
+        <button class="btntoopenlist" id="openlist">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-body-text" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M0 .5A.5.5 0 0 1 .5 0h4a.5.5 0 0 1 0 1h-4A.5.5 0 0 1 0 .5m0 2A.5.5 0 0 1 .5 2h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m9 0a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m-9 2A.5.5 0 0 1 .5 4h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5m5 0a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m7 0a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5m-12 2A.5.5 0 0 1 .5 6h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5m8 0a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m-8 2A.5.5 0 0 1 .5 8h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m7 0a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m-7 2a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1h-8a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5"/>
+              </svg>
+    </button>
+</div>
+    </div>
+    </header>
+    
+
+<div>
+    <div class="grid" >
+<!-----في هنا شغل التشارت بس الكود حقها موجود تحت بالجافا-->
+<div class="box1">
+    
+    <div class="dashbord">
+
+        <canvas width="900" height="330" class="mychart" id="myChart1"></canvas>
+
+    </div>
+
+</div>
+
+<!-----في هنا شغل التشارت بس الكود حقها موجود تحت بالجافا-->
+    <div class="box2">
+
+        <div class="dashbord">
+
+            <canvas width="" height="" class="mychart" id="myChart2"></canvas>
+
+        </div>
+
+    </div>
+
+    <!--هذا الجزء البسيط حق الاعجابات--->
+    <div class="bar_secitons">
+        <nav>
+            <ul class="br_list">
+                <li>
+                    <label for="file">الاعجابات <span>5/500</span></label>
+                    <div class="skill php a1">60%</div> 
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
+                        <path d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
+                      </svg>
+                    </li>
+                <li>
+                    <label for="file">المنتجات <span>30/100</span></label>
+                    <div class="skill php a2">60%</div> 
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-fill" viewBox="0 0 16 16">
+                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4z"/>
+                      </svg>
+                    </li>
+                <li>
+                    <label for="file">التحذيرات <span>1/3</span></label>
+                    <div class="skill php a3">60%</div> 
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-diamond-fill" viewBox="0 0 16 16">
+                        <path d="M9.05.435c-.58-.58-1.52-.58-2.1 0L.436 6.95c-.58.58-.58 1.519 0 2.098l6.516 6.516c.58.58 1.519.58 2.098 0l6.516-6.516c.58-.58.58-1.519 0-2.098zM8 4c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995A.905.905 0 0 1 8 4m.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                      </svg>
+                    </li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <div class="box3">
+
+
+        <div class="card c1">
+        <h2>عدد المنتجات المطلوبة</h2>
+<div>
+    <h1>10</h1>
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+      </svg>
+    </div>
+    
+</div>
+<div class="card c2">
+    <h2>عدد المسلمه </h2>
+    <div>
+    <h1>10</h1>
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart-check-fill" viewBox="0 0 16 16">
+        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708"/>
+      </svg>
+      
+    </div>
+</div>
+<div class="card c3">
+    <h2>عدد التصنيفات </h2>
+    <div>
+        <h1>10</h1>
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-card-list" viewBox="0 0 16 16">
+            <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z"/>
+            <path d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8m0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m-1-5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0M4 8a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m0 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
+          </svg>
+          
+        </div>
+    </div>
+    <div class="card c4">
+        <h2>اسم المحل</h2>
+        <div>
+            <h1>ابو خالد للفول</h1>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-backpack4" viewBox="0 0 16 16">
+                <path d="M4 9.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5zm1 .5v3h6v-3h-1v.5a.5.5 0 0 1-1 0V10z"/>
+                <path d="M8 0a2 2 0 0 0-2 2H3.5a2 2 0 0 0-2 2v1c0 .52.198.993.523 1.349A.5.5 0 0 0 2 6.5V14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V6.5a.5.5 0 0 0-.023-.151c.325-.356.523-.83.523-1.349V4a2 2 0 0 0-2-2H10a2 2 0 0 0-2-2m0 1a1 1 0 0 0-1 1h2a1 1 0 0 0-1-1M3 14V6.937q.24.062.5.063h4v.5a.5.5 0 0 0 1 0V7h4q.26 0 .5-.063V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1m9.5-11a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-9a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/>
+              </svg>
+
+        </div>
+    </div>
+    
+    </div>
+
+
+    <div class="box4">
+        <div class="continer">
+  
+            <div class="table-div">
+                <table >
+                    <tr>
+                        <th> اسم العميل </th> 
+                        <th> موقع العميل</th>
+                      <th> اسم المنتج</th>
+                      <th>  ملاحظة </th>
+                      <th> الوقت المتوقع للوصول    </th>
+             
+                      <th>عمليات  </th>
+                    </tr>
+                    
+                    <tr>
+                        <td>1</td>
+                        <td>معصوب اتشب </td>
+                        <td> 12345</td>
+                      <td>ادمن</td>
+                      <td>ادمن</td>
+                      
+                      <td>
+                          <button class="submit">قبول</button>
+                    </td>
+                </tr>
+                   
+           
+                  </table>
+                </div>
+        </div>
+    </div>
+
+
+    <div class="box5">
+        <h2 align="center">التعلقيات</h2>
+        <div class="comment">
+            <h4>اسم العميل
+                /
+                اسم المنتج</h4>
+            <hr>
+            <h4>
+                شسيشسيشسيشسيوش المنتج الابو كلب ذا </h4>
+        </div>
+        <div class="comment">
+            <h4>اسم العميل
+                /
+                اسم المنتج</h4>
+            <hr>
+            <h4>
+                شسيشسيشسيشسيوش المنتج الابو كلب ذا </h4>
+        </div>
+        <div class="comment">
+            <h4>اسم العميل
+                /
+                اسم المنتج</h4>
+            <hr>
+            <h4>
+                شسيشسيشسيشسيوش المنتج الابو كلب ذا </h4>
+        </div>
+        <div class="comment">
+            <h4>اسم العميل
+                /
+                اسم المنتج</h4>
+            <hr>
+            <h4>
+                شسيشسيشسيشسيوش المنتج الابو كلب ذا </h4>
+        </div>
+    </div>
+    </div>
+</div>
+
+    <footer>
+
+        <div class="footer_sec">
+            <h1>Beyond Aden Bridge</h1>
+            <h2>B.A.B</h2>
+        </div>
+
+        <div class="tp_page">
+            <nav>
+                <ul class="list">
+                    <li><a href="#">الصفحة الرئيسية</a></li>
+                    <li><a href="./showproduct/showproduct.html"> منتجاتي</a></li>
+                    <li><a href="./add_product/addproductt.html"> اضافة منتج</a></li>
+                    <li><a href="./settings/settings.html">  اعدادات</a></li>
+                  
+            </ul>
+        </nav>
+        </div>
+
+        <div class="soical">
+            <nav>
+                <ul class="list">
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                      </svg>
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                      </svg>
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                        <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                      </svg>
+                </li>
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+                        <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+                      </svg>
+                </li>
+            </ul>
+        </nav>
+        </div>
+
+        <div class="privce">
+            <h5>
+                سياسة الخصوصية : 
+            
+                
+                يحترم موقعنا خصوصيتك ويتعهد بحماية بياناتك الشخصية. توضح 
+            <a href=""> سياسة الخصوصية</a><br>
+                 هذه كيفية جمعنا واستخدامنا والكشف عن معلوماتك الشخصية. 
+                </h5>
+        </div>
+        <div class="copyright">
+          <p>copy right @2024</p>
+        </div>
+
+    </footer>
+
+
+    <script src="seller.js"></script>
+    <script src="./../loading/loading.js"></script>
+    <script>
+
+ 
+    const data_bar ={
+        
+        labels: ['لاب','جوال','معصوب'],
+  datasets: [{
+    label: 'مبيعات المنتج',
+    data: [65, 59, 80, 81, 56, 55, 40],
+    backgroundColor: ['rgba(255, 99, 132, 0.2)','rgba(255, 159, 64, 0.2)','rgba(255, 205, 86, 0.2)','rgba(75, 192, 192, 0.2)','rgba(54, 162, 235, 0.2)','rgba(153, 102, 255, 0.2)','rgba(201, 203, 207, 0.2)'],
+    borderColor: ['rgb(255, 99, 132)','rgb(255, 159, 64)','rgb(255, 205, 86)','rgb(75, 192, 192)','rgb(54, 162, 235)','rgb(153, 102, 255)','rgb(201, 203, 207)'],
+    borderWidth: 1
+  },
+  {
+    label: ' الاعجابات',
+    data: [65, 59, 80, 81, 56, 55, 40],
+    backgroundColor: ['rgba(75, 192, 192, 0.2)','rgba(54, 162, 235, 0.2)','rgba(153, 102, 255, 0.2)','rgba(201, 203, 207, 0.2)'],
+    borderColor: ['rgb(54, 162, 235)','rgb(153, 102, 255)','rgb(201, 203, 207)'],
+    borderWidth: 1
+  },
+]
+};
+            
+
+    const data_doughnut ={
+           
+  labels: [
+    'سليمة',
+    'غير سليمة'
+  ],
+  datasets: [{
+    label: 'مقارنة بين المنتجات السليمةوغير السليمة',
+    data: [300,100 ],
+    backgroundColor: [
+      'rgb(255, 99, 132)',
+      'rgb(255, 205, 86)',
+    ],
+    hoverOffset: 4
+  }]
+}
+        
+        
+        const config={
+            type: 'bar',
+            data: data_bar,
+            options: {
+                scales: {
+        y: {
+          beginAtZero: true
+        }
+      },
+                responsive: true,
+                plugins: {
+                  legend: {
+                    position: 'top',
+                    labels: {
+                    // This more specific font property overrides the global property
+                    font: {
+                        size: 15,
+                        family:'Tajawal',
+
+                    }
+                }
+                  },
+                  title: {
+                    display: true,
+                    text: 'مقارنة بين عدد المنتجات المباعة و الاعجابات  ',
+                    font: {
+                        size: 20,
+                        family:'Tajawal',
+
+                    }
+                  }
+                }
+
+              },   
+        }
+
+        const config2={
+            type: 'doughnut',
+            data: data_doughnut,
+            options: {
+                responsive: true,
+                plugins: {
+                  legend: {
+                    position: 'top',
+                    labels: {
+                    // This more specific font property overrides the global property
+                    font: {
+                        size: 15,
+                        family:'Tajawal',
+
+                    }
+                }
+                  },
+                  title: {
+                    display: true,
+                    text: 'عدد المنتجات السليمة و الغير سليمة',
+                    font: {
+                        size: 20,
+                        family:'Tajawal',
+
+                    }
+                  }
+                }
+              },   
+        }
+    
+        new Chart(
+          document.getElementById('myChart1'),
+          config)
+        new Chart(
+          document.getElementById('myChart2'),
+          config2)
+    </script>
+</body>
+</html>

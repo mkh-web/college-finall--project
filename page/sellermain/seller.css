@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
+
+/*اساسيات*/
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Tajawal', sans-serif; 
+  scroll-behavior: smooth;
+  background-color: #c2c1bf;
+  
+}
+
+a{
+  text-decoration: none;
+  cursor: pointer;
+  font-family: 'Tajawal', sans-serif; 
+}
+p{
+  margin: 0px;
+}
+button{
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 25px;
+}
+label{
+  outline: none;
+
+}
+li{
+  list-style: none;
+}
+/*header*/
+header{
+  width: 100%;
+  box-shadow: rgba(36, 36, 36, 0.2) 0px 7px 29px 0px;
+  background-color: white;
+}
+
+.header_continer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding:0 25px;
+  align-items: center;
+  color: white;
+}
+.header_continer li button a{
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+.header_continer li button {
+  background-color: transparent;
+  width: 170px;
+  transition: 0.5s ease-in-out;
+}
+
+
+
+
+/*table */
+.table-div{
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+table{
+  border-collapse: collapse;
+  text-align: center;
+  width: 100%;
+}
+tr:has(th){
+  background-color: #161616;
+  width: 100%;
+  height: 40px;
+  color: white;
+  opacity: 1;
+}
+tr{
+  border-bottom: 1px #161616 solid;
+  opacity: 0.7;
+}
+tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+tr:hover{
+  opacity: 1;
+  border-bottom: 1px #161616 solid;
+}
+.logout a{
+  color: #161616;
+  transition: 0.5s ease-in-out;
+  
+}
+
+/*FOOTER*/
+
+footer{
+  background-color: #161616;
+  width: 100%;
+}
+.footer_sec{
+  padding: 5px;
+  color: white;
+  text-align: center;
+}
+.footer_sec h1{
+  margin-bottom: 0px;
+}
+.footer_sec h2{
+  color: orange;
+  margin: 0px;
+}
+
+.list{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+  padding-right: 0px;
+  
+  color: white;
+  
+  gap: 25px;
+  list-style: none;
+  transition: 0.5s ease-in-out;
+}
+
+
+.tp_page .list li{
+  border: #161616 1px solid;
+  transition: 0.5s ease-in-out;
+}
+.tp_page .list li a{
+  color: white;
+}
+.tp_page .list li{
+  border: #161616 1px solid;
+  transition: 0.5s ease-in-out;
+  color: white;
+}
+
+.soical svg{
+  width: 20px;
+  height: 20px;
+}
+
+.privce{
+  text-align: center; 
+  color: gray;
+}
+.copyright{
+  background-color: black;
+  color: white;
+  text-align: center;
+  opacity: 0.5  ;
+}
+
+
+
+
+/*button*/
+.delete{
+  background-color: #ff0a0ac9;
+  color: white;
+  outline: none;
+  border: none;
+  font-size: medium;
+  width: 50px;
+  height: 30px;
+}
+.edit{
+  background-color: #0a1affc9;
+  color: white;
+  outline: none;
+  border: none;
+  font-size: medium;
+  width: 50px;
+  height: 30px;
+}
+
+.submit{
+  background-color: greenyellow;
+  color: white;
+  font-size: larger;
+  border: none;
+  outline: none;
+  height: 30px;
+  margin-top: 5px;
+}
+.banned{
+  background-color: #161616;
+  color: white;
+  outline: none;
+  border: none;
+  font-size: medium;
+  width: 50px;
+  height: 30px;
+  
+}
+.unbanned-btn{
+  background-color: #a5e729;
+  color: white;
+  outline: none;
+  border: none;
+  font-size: medium;
+  width: 70px;
+  height: 30px;
+  
+}
+/*effects*/
+.tp_page .list li:hover{
+  border-bottom: 1px orange solid;
+  transition: 0.5s ease-in-out;
+}
+.soical .list:not(:hover){
+  opacity: 0.5;
+  transition: 0.5s ease-in-out;
+}
+.header_continer li button:hover{
+  background-color:  rgb(255, 153, 0);
+  transition: 0.5s ease-in-out;
+  
+  a{
+    color:white;
+  }
+  
+}
+.header_continer li .active{
+  background-color:  rgb(255, 153, 0);
+  transition: 0.5s ease-in-out;
+  
+  a{
+    color:white;
+  }
+  
+}
+.logout button:hover{
+  background-color:red;
+  transition: 0.5s ease-in-out;
+  
+  a{
+    color:white;
+  }
+
+}
+/*open meun*/
+.btntoopenlist{
+  display: none;
+}
+.btntoopenlist button{
+  background-color: transparent;
+}
+.bi-body-text{
+  color: #f89500;
+}
+
+.openlist{
+  background-color: #161616;
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  font-size: 70px;
+  transition: 0.5s ease-in-out;
+
+}
+.openlist li button a{
+  transition:  0.5s ease-in-out;
+
+  font-size: 30px;
+  color: white;
+}
+.openlist li button {
+  background-color: rgba(255, 255, 255, 0);
+  transition:  0.5s ease-in-out;
+
+}
+/*scrool bar*/
+::-webkit-scrollbar {
+  
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #161616;
+  border-radius: 100px;
+}
+
+
+@media only screen and (max-width:720px) {
+  *{
+  transition: 0.5s ease-in-out;
+
+  }
+
+  .header_continer div{
+    margin: 5px;
+  }
+    
+  .header_continer li{
+      display: none;
+    }
+    .header_continer .return-icon{
+      
+      display: none;
+    }
+  .btntoopenlist{
+    display: block;
+  }
+
+  header{
+    height: 50px;
+  }
+
+  ::-webkit-scrollbar {
+  
+display: none;
+  }
+
+  
+}
+.show{
+  transition:  0.5s ease-in-out;
+  display: block;
+}

@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,323;1,323&display=swap');
+
+/*splash screen*/
+
+.intro{
+    position: fixed;
+    z-index: 9999999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #161616;
+    transition: 1s;
+}
+
+.logo-header{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: rgb(255, 255, 255);
+}
+
+.logo{
+    position: relative;
+    display: inline-block;
+    bottom: -20px;
+    opacity: 0;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 323;
+    font-style: normal;
+}
+
+.logo.active{
+    bottom: 0;
+    opacity: 1;
+    transition: 0.5s ease-in-out ;
+}
+
+.logo.fade{
+    bottom: 150px;
+    opacity: 0;
+    transition:  0.5s ease-in-out;
+}
+

@@ -1,0 +1,241 @@
+*{
+  scroll-snap-type: y mandatory;  
+  
+
+}
+/*body*/
+.grid{
+    display: grid;
+    grid-template-rows:  repeat( auto-fit ,auto-fit);
+    grid-template-columns: repeat(auto-fit, 150vh);
+    grid-template-areas: 
+    "chart1 chart2"
+    "chart1 likes-secitons"
+    "head head"     
+    "comment tables ";
+  
+    height: 100%;
+    overflow: hidden;
+    gap: 7px;
+  
+    margin: 10px 0px;
+    border-radius: 20px;
+  }
+  .box1{
+    grid-area: chart1 ;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    overflow: hidden;
+    box-shadow: 5px -5px 90px -48px rgba(0,0,0,0.75);
+
+  }
+  .box2{
+    grid-area:chart2 ;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    overflow: hidden;
+    box-shadow: 5px -5px 90px -48px rgba(0,0,0,0.75);
+
+  }
+
+
+  .bar_secitons{
+    grid-area: likes-secitons;
+    background-color: white;
+    width: 100%;
+    height: 100px; 
+    box-shadow: 5px -5px 90px -48px rgba(0,0,0,0.75);
+
+  }
+  
+  .box3{
+    grid-area: head ;
+    width: 100%;
+    height: 200px;
+    
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    gap: 10px;
+  }
+  .box4{
+    grid-area: comment;
+    background-color: white;
+    width: 100%;
+    height: 300px;
+    overflow: auto;
+  }
+  .box5{
+    grid-area: tables;
+    width: 100%;
+    height: 300px;
+    overflow: auto;
+  
+  }
+/*list section */
+.bar_secitons li{
+  display: flex;
+  width: 380px;
+  justify-content: space-between;
+  align-items: center;
+}
+/*styleing the range */
+.br_list{
+  padding-right: 40px;
+}
+.br_list li label{
+  width: 115px;
+  padding: 0px;
+  margin: 0px;
+}
+.br_list li progress{
+  color: #000;
+  background-color: #ffffff;
+}
+.skill { 
+  color: white; 
+  height: 20px;
+  text-align: center; 
+  font-size: 105; 
+  border-radius: 5px; 
+} 
+.php { 
+  width: 60%; 
+}
+
+.a1{
+  background-color: rgb(255, 205, 86); 
+}
+.a2{
+  background-color: rgb(255, 99, 132); 
+}
+.a3{
+  background-color: rgb(223, 70, 9); 
+}
+/*box3 card*/
+.card{
+  width: 380px;
+  height: 200px;
+  background-color: white;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 5px -5px 90px -48px rgba(0,0,0,0.75);
+
+  color: white;
+  transition: 0.5s ease-in-out;
+}
+.card:hover{
+  
+  padding: 0px 20px;
+  opacity: 0.9;
+  transition: 0.5s ease-in-out;
+}
+.card div{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.c1{
+  background: rgb(18,18,18);
+background: linear-gradient(90deg, rgba(18,18,18,1) 0%, rgba(42,0,54,1) 57%, rgba(18,32,75,1) 100%);
+}
+.c2{
+  background: rgb(42,0,54);
+  background: linear-gradient(90deg, rgba(42,0,54,1) 0%, rgba(75,18,30,1) 49%, rgba(18,18,18,1) 100%);
+}
+.c3{
+  background: rgb(18,18,18);
+background: linear-gradient(90deg, rgba(18,18,18,1) 0%, rgba(18,75,54,1) 54%, rgba(70,20,70,1) 100%);
+}
+.c4{
+  color: #000;
+  width: 500px;
+}
+/*comment*/
+.comment{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+  background-color: white;
+  border-radius:0px 0px 0px  35px;
+  margin: 5px;
+}
+  @media only screen and (max-width:768px) {
+
+    .grid{
+      
+      grid-template-columns: repeat(auto-fit, 470px) !important;
+    grid-template-areas: 
+    "chart1"
+    "chart2"
+    "likes-secitons"
+    "head"     
+    "comment"
+     "tables";
+
+     width: 100%;
+     overflow: hidden;
+    }  
+    .box1{
+      overflow-x: auto;
+      width: 450px;
+    }
+    .box3{
+      display: flex;
+      overflow-x: auto;
+      width: 100%;
+    }
+  
+    .box4{
+      display: flex;
+      overflow-x: auto;
+      width: 90%;
+    }
+  
+    .box5{
+      display: flex;
+      overflow-x: auto;
+      width: 100%;
+    }
+    
+    .card{
+  padding: 0px 20px;
+  
+}
+.c4{
+      width: 250px;
+      
+      h2{
+        
+        width: 150px;
+      }
+      h1{
+        width: 250px;
+
+      }
+    }
+    .br_list{
+      padding-right: 20px;
+    }
+
+    .comment{
+      font-size: 30px;
+    }
+  } 

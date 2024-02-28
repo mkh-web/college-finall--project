@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
+
+/*اساسيات*/
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+  background-color: #fefae0;
+
+
+  font-family: 'Tajawal', sans-serif; 
+  font-weight: 400;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+/*scrool bar*/
+::-webkit-scrollbar {
+  
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #161616;
+  border-radius: 100px;
+}
+
+  .submit{
+    font-size: larger;
+    border-radius: 20px;
+    border: none;
+    background-color: #F45B69;
+    color: white !important; 
+    height: 40px;
+    width: 100%;
+    transition: 0.2s ease-in-out;
+    outline: none;
+  }
+  
+  .submit:hover{
+  
+    background-color: #dbdbdb;
+    color: #F45B69 !important; 
+  
+    transition: 0.2s ease-in-out;
+  
+    box-shadow: 0px 1px 1px rgba(3, 7, 18, 0.02),
+  }
+.return{
+  background-color: transparent;
+  border: white;
+  font-size: large;
+  width: 75px;
+  height: 50px;   
+  overflow: hidden;
+  a{
+    color: white;
+  }
+  
+  
+}
+
+.return-icon {
+  color: white;
+  background-color: transparent;
+  transition: 0.5s ease-in-out;
+}
+
+label{
+  margin-top: 15px;
+  color: rgb(85, 85, 85);
+  border: none;
+  font-size: larger;
+}
+
+input{
+
+  border: none;
+  border-bottom: 1px solid black;
+  font-size: larger;
+  outline: none;
+  transition: 0.5s ease-in-out;
+}
+
+input:focus{
+  transition: 0.5s ease-in-out;
+
+  border: none;
+  border-bottom: 1px solid rgb(218, 147, 147);
+  font-size: larger;
+  outline: none;
+}
+
+/*هنا تنتهي*/
+
+
+header{
+  position: fixed;
+  background-color: #161616;
+  width: 100%;
+  color: white;
+}
+
+header h2{
+  margin-right: 25px;
+}
+
+
+/*body*/
+.father{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fefae0;
+
+  border-radius: 15px;
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+  
+
+}
+
+.logo-img{
+  border-radius: 20%;
+}
+
+.s1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+ form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+    width: 250px;
+    gap: 2px; 
+}
+
+ .container{
+  background-color: white;
+  width:350px;
+  height: 720px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center ;
+  
+    /* https://smoothshadows.com/#djEsMSw1LDAuMDgsMjQsMzIsMCwjMDMwNzEyLCNmM2Y0ZjYsI2ZmZmZmZiwy */
+box-shadow: 0px 1px 1px rgba(3, 7, 18, 0.02),
+0px 5px 4px rgba(3, 7, 18, 0.03),
+0px 12px 9px rgba(3, 7, 18, 0.05),
+0px 20px 15px rgba(3, 7, 18, 0.06),
+0px 32px 24px rgba(3, 7, 18, 0.08);
+
+}
+
+
+.btn{
+  width: 100px;
+  height: 30px;
+  font-size: larger;
+  border-radius: 25px;
+}
+
+.radiobtn{
+  margin: 20px;
+}
+
+.privce{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+}
+
+
+/*hide the increment */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+}
+
+
+
+/*end of desigin*/
+
+
+
+
+
+/*mobile*/
+
+@media only screen and (max-width:768px) {
+
+.container{
+  height: 100vh;
+}
+ 
+}

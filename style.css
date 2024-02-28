@@ -1,0 +1,321 @@
+/*اساسيات - basics*/
+@import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Tajawal', sans-serif;
+}
+
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+input {
+  outline: none;
+}
+
+/*اساسيات - basics*/
+
+/*شريط التمرير - scroll bar*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/*شريط التمرير - scroll bar*/
+
+/*header*/
+
+.header_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  width: 100%;
+  overflow-x: clip;
+
+  transition: 1s ease-in-out;
+
+}
+
+.header_box1 {
+  margin-right: 25px;
+}
+.header_box1 img{
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+}
+
+.header_list {
+  display: flex;
+  gap: 100px;
+}
+
+.header_box2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_list a {
+  color: rgb(0, 0, 0);
+
+}
+
+.header_box3 button{
+  background-color: #FFBB64;
+  margin-left: 25px;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 18px;
+  box-shadow: 0px 0px 27px -9px rgba(0,0,0,0.75);
+
+  outline: none;
+
+  transition: 0.5s ease-in-out; 
+}
+.header_box3 button:hover{
+  filter: drop-shadow(0 0 1rem #FFBB64);
+  border: 1px solid #FFBB64;
+  background-color: white;
+  box-shadow: none;
+  
+  transform: translateY(-3px);
+  a{
+    color: #FFBB64;
+  }
+
+}
+
+
+.header_box3 a{  
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+/*search box design*/
+.drop_down{
+  position: absolute;
+  top:  10%;
+  width: 100%;
+  overflow-x: auto;
+
+  opacity: 1;
+  transition: 1s ease-in-out;
+
+
+  display: none;
+  /*glass effect*/
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border:1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.37);
+}
+
+
+.drop_down_container{
+  margin: 25px;
+  display: flex;
+  gap: 35px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 450px;
+}
+
+span{
+  color: #FFBB64;
+
+}
+
+/*جزء التعريف*/
+.web_info{
+  img{
+    width: 250px;
+    height: 250px;
+  }
+}
+/*جزء البحث*/
+.search_div_container{
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.input_search{
+  border-radius: 25px;
+  background-color:#ffffff;
+  gap: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right:5px ;
+  box-shadow: 0px 0px 15px -9px rgba(0,0,0,0.75);
+}
+.input_search input[type="search"]{
+  background-color:#ffffff;
+  width: 20rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 25px 0px  0px 25px;
+}
+
+.input_search input[type="search"]:enabled{
+  opacity: 0.7;
+  font-size: larger;
+  padding-right: 5px;
+}
+
+.input_search svg{
+  color: #161616;
+  margin-right: 5px;
+}
+/* clears the ‘X’ from Chrome */
+input[type="search"]::-webkit-search-cancel-button{ display: none; }
+
+
+.catagorize{
+  width: 100%;
+
+  h2{
+    color: #FFBB64;
+  }
+}
+.catagorize ul{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+
+  img{
+    margin-top: 5px;
+    width: 150px;
+    height:150px;
+    border-radius: 15px;
+    object-fit: cover;
+  }
+}
+
+
+/*body*/
+.container{
+    height: 200vh;
+}
+
+/*FOOTER*/
+
+/*FOOTER*/
+
+footer{
+  background-color: #161616;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer_sec{
+  padding: 5px;
+  color: white;
+  text-align: center;
+}
+.footer_sec h1{
+  margin-bottom: 0px;
+}
+.footer_sec h2{
+  color: orange;
+  margin: 0px;
+}
+
+.list{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+  padding-right: 0px;
+  
+  color: white;
+  
+  gap: 25px;
+  list-style: none;
+  transition: 0.5s ease-in-out;
+}
+
+
+.tp_page .list li{
+  border: #161616 1px solid;
+  transition: 0.5s ease-in-out;
+}
+.tp_page .list li a{
+  color: white;
+}
+.tp_page .list li{
+  border: #161616 1px solid;
+  transition: 0.5s ease-in-out;
+  color: white;
+}
+
+.soical svg{
+  width: 20px;
+  height: 20px;
+}
+
+.privce{
+  text-align: center; 
+  color: gray;
+}
+.copyright{
+  background-color: black;
+  color: white;
+  text-align: center;
+  opacity: 0.5  ;
+}
+
+
+/*js stuff*/
+.show{
+  display: block;
+  opacity: 1;
+  transform: translateY(-3px);
+  transition: 1s ease-in-out;
+}
+
+
