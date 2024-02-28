@@ -47,6 +47,11 @@ header{
   align-items: center;
   color: white;
 }
+.header_continer img{
+border-radius: 25px;
+width: 30px;
+height: 30px;
+}
 .header_continer li button a{
   font-size: 20px;
   color: rgb(0, 0, 0);

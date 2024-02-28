@@ -28,6 +28,11 @@ input {
   outline: none;
 }
 
+body{
+  background-color: #dadada;
+
+
+}
 /*اساسيات - basics*/
 
 /*شريط التمرير - scroll bar*/
@@ -64,7 +69,9 @@ input {
   width: 100%;
   overflow-x: clip;
 
+  background-color: white;
   transition: 1s ease-in-out;
+  box-shadow: 0px 0px 15px -9px rgba(0,0,0,0.75);
 
 }
 
@@ -94,16 +101,21 @@ input {
 }
 
 .header_box3 button{
-  background-color: #FFBB64;
-  margin-left: 25px;
+  background-color: #f73d1d;
   border-radius: 5px;
   padding: 10px;
   font-size: 18px;
-  box-shadow: 0px 0px 27px -9px rgba(0,0,0,0.75);
-
+  
   outline: none;
-
+  
   transition: 0.5s ease-in-out; 
+}
+.header_box3 button:nth-child(2){
+  background-color: #e47662;
+}
+.header_box3 button:last-child{
+  margin-left: 5px;
+  background-color: #FFBB64;
 }
 .header_box3 button:hover{
   filter: drop-shadow(0 0 1rem #FFBB64);
@@ -140,7 +152,7 @@ input {
 
   display: none;
   /*glass effect*/
-  background: linear-gradient(135deg, rgb(255, 255, 255), rgb(236, 204, 146));
+  background: rgb(248, 248, 248);
 
 }
 
@@ -250,43 +262,11 @@ input[type="search"]::-webkit-search-cancel-button{ display: none; }
     "mmost_product mmost_product"
     "deals panel"
     "genral_product genral_product"
-
-
     ;
-}
 
-.slide{
-  grid-area: slide;
-  border: 1px solid black;
-  background-color: red;
+    gap: 25px;
+    margin:20px 0%;
 }
-.trends{
-  grid-area: trends;
-  border: 1px solid black;
-}
-.news{
-  grid-area: news;
-  border: 1px solid black;
-}
-.mmost_product{
-  grid-area: mmost_product;
-  border: 1px solid black;
-}
-.deals{
-  grid-area: deals;
-  border: 1px solid black;
-}
-.panel{
-  grid-area: panel;
-  border: 1px solid black;
-}
-.genral_product{
-  grid-area: genral_product;
-  border: 1px solid black;
-}
-
-
-
 
 
 /*FOOTER*/
