@@ -16,7 +16,7 @@
 </head>
 
 <body dir="rtl">
-  <!--
+  
 
   <div class="intro" dir="ltr">
     <h1 class="logo-header">
@@ -25,7 +25,7 @@
       <span class="logo">Bridge</span>
     </h1>
   </div>
--->
+
 
   <div class="drop_down" id="search_div">
     <div class="drop_down_container">
@@ -61,22 +61,15 @@
           <h2>تصنيفات</h2>
           <nav>
             <ul>
-              <li>
-                <h4>لابتوب احلام العصر</h4>
-                <img src="./public/images.jpg" alt="laptopimg">
-              </li>
-              <li>
-                <h4>مدرسي</h4>
-                <img src="./public/images (1).jpg" alt="laptopimg">
-              </li>
-              <li>
-                <h4>لابتوب احلام العصر</h4>
-                <img src="./public/images.jpg" alt="laptopimg">
-              </li>
-              <li>
-                <h4>قيمنق</h4>
-                <img src="./public/images (1).jpg" alt="laptopimg">
-              </li>
+
+              <li><button>قيمنق</button></li>
+              <li><button>مدرسي</button></li>
+              <li><button>احلام العصر</button></li>
+              <li><button>مدرس</button></li>
+              <li><button>مدرس</button></li>
+              <li><button>مدرس</button></li>
+              <li><button>مدرس</button></li>
+              <li><button>مدرس</button></li>
 
 
             </ul>
@@ -137,6 +130,38 @@
           </a>
         </button>
 
+
+
+      </div>
+
+      <button class="btn_for_moblie">
+
+
+        <svg xmlns="http://www.w3.org/2000/svg" id="btn_for_moblie" width="25" height="25" fill="currentColor" class="bi bi-justify-left"
+          viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M2 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5" />
+        </svg>
+
+      </button>
+
+      <div class="moblie " id="moblie">
+        <nav>
+          <ul class="moblie_list">
+            <h1>قائمة التنقل</h1>
+            <li>الصفحة الرئيسية</li>
+            <li>المنتجات</li>
+            <li>البحث</li>
+            <li>المفضله</li>
+            <li>المحفظة</li>
+            <li id="close_mobile">اغلاق القائمة</li>
+            <li><a>تسجيل دخول</a></li>
+
+          
+            
+
+          </ul>
+        </nav>
       </div>
 
     </div>
@@ -145,22 +170,776 @@
   <div class="container">
 
     <div class="slide_show">
+      <div class="slider">
+        <div class="slides">
+          <img class="slide" src="./public/images (1).jpg" alt="Image #1">
+          <img class="slide" src="./public/images.jpg" alt="Image #2">
+          <img class="slide" src="./public/xd.png" alt="Image #3">
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094</button>
+        <button class="next" onclick="nextSlide()">&#10095</button>
 
 
+      </div>
+    </div>
+
+    <div class="trends">
+      <div class="header_trends">
+        <h2>الاكثر شيوعا</h2>
+      </div>
+      <div>
+        <nav>
+          <ul>
+            <li>
+              <h1 class="fst">1.</h1>
+              <h2>حليب</h2>
+          
+            </li>
+            <li>
+              <h1 class="Sst">2.</h1>
+              <h2>حليب</h2>
+            </li>
+            <li>
+              <h1 class="Tst">3.</h1>
+              <h2>حليب</h2>
+            </li>
+            <li>
+              <h1 class="ELSEst">4.</h1>
+              <h2>حليب</h2>
+            </li>
+            <li>
+              <h1 class="ELSEst">5.</h1>
+              <h2>حليب</h2>
+            </li>
+            <li>
+              <h1 class="ELSEst">6.</h1>
+              <h2>حليب</h2>
+            </li>
+            <li>
+              <h1 class="ELSEst">7.</h1>
+              <h2>حليب</h2>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="news">
+      <div class="slide_show">
+        <div class="slider">
+          <div class="slides">
+            <img class="slide2" src="./public/images (1).jpg" alt="Image #1">
+            <img class="slide2" src="./public/images.jpg" alt="Image #2">
+            <img class="slide2" src="./public/xd.png" alt="Image #3">
+          </div>
+          <button class="prev" onclick="prevSlide2()">&#10094</button>
+          <button class="next" onclick="nextSlide2()">&#10095</button>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="most_product">
+      <h1>المنتجات الاكثر طلبا</h1>
+
+      <div class="card">
+
+        <div class="uper_seciton">
+          <h4>افضل المنتجات</h4>
+          <button>
+
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+              class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
+              <path
+                d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132" />
+            </svg>
+          </button>
+
+        </div>
+        <div class="middle_sec">
+          <button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill"
+              viewBox="0 0 16 16">
+              <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+            </svg>
+          </button>
+        </div>
+
+
+        <div class="card_img_div">
+          <img src="./public/images.jpg" alt="" srcset="">
+        </div>
+
+        <div class="content_card_div">
+          <h2>Apple Mac book 4 </h2>
+          <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quae magnam laborum suscipit consequuntur,
+          </h5>
+          <h5>401 ر.س</h5>
+
+          <div class="button_div">
+            <button>شراء</button>
+            <h4>تقييم المنتج: 10/10</h4>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="card">
+
+        <div class="uper_seciton">
+          <h4>افضل المنتجات</h4>
+          <button>
+
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+              class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
+              <path
+                d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132" />
+            </svg>
+          </button>
+
+        </div>
+        <div class="middle_sec">
+          <button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill"
+              viewBox="0 0 16 16">
+              <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+            </svg>
+          </button>
+        </div>
+
+
+        <div class="card_img_div">
+          <img src="./public/images.jpg" alt="" srcset="">
+        </div>
+
+        <div class="content_card_div">
+          <h2>Apple Mac book 4 </h2>
+          <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quae magnam laborum suscipit consequuntur,
+          </h5>
+          <h5>401 ر.س</h5>
+
+          <div class="button_div">
+            <button>شراء</button>
+            <h4>تقييم المنتج: 10/10</h4>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="card">
+
+        <div class="uper_seciton">
+          <h4>افضل المنتجات</h4>
+          <button>
+
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+              class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
+              <path
+                d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132" />
+            </svg>
+          </button>
+
+        </div>
+        <div class="middle_sec">
+          <button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill"
+              viewBox="0 0 16 16">
+              <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+            </svg>
+          </button>
+        </div>
+
+
+        <div class="card_img_div">
+          <img src="./public/images.jpg" alt="" srcset="">
+        </div>
+
+        <div class="content_card_div">
+          <h2>Apple Mac book 4 </h2>
+          <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quae magnam laborum suscipit consequuntur,
+          </h5>
+          <h5>401 ر.س</h5>
+
+          <div class="button_div">
+            <button>شراء</button>
+            <h4>تقييم المنتج: 10/10</h4>
+
+          </div>
+
+        </div>
+      </div>
 
 
 
 
     </div>
 
-    <div class="trends">trend</div>
-    <div class="news">news</div>
-    <div class="mmost_product">most wanted product</div>
+
+
     <div class="deals">for gemers product</div>
-    <div class="panel"> panel</div>
-    <div class="genral_product"> product in genral</div>
+
+    <div class="panel">
+      <div class="first_panel">
+        مدرسي
+      </div>
+      <div class="second_panel">
+        منزلي
+      </div>
+      <div class="third_panel">
+        متنقل
+      </div>
+      <div class="forth_panel">
+        فئة متوسطة
+      </div>
+    </div>
 
 
+
+    <div class="show_products">
+      <h1>منتجات</h1>
+    </div>
+    <div class="genral_product">
+      <div class="card">
+
+        <div class="uper_seciton2">
+
+          <button>
+
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+              class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
+              <path
+                d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132" />
+            </svg>
+          </button>
+
+        </div>
+        <div class="middle_sec">
+          <button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill"
+              viewBox="0 0 16 16">
+              <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+            </svg>
+          </button>
+        </div>
+
+
+        <div class="card_img_div">
+          <img src="./public/images.jpg" alt="" srcset="">
+        </div>
+
+        <div class="content_card_div">
+          <h2>Apple Mac book 4 </h2>
+          <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quae magnam laborum suscipit consequuntur,
+          </h5>
+          <h5>401 ر.س</h5>
+
+          <div class="button_div">
+            <button>شراء</button>
+            <h4>تقييم المنتج: 10/10</h4>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="card">
+
+        <div class="uper_seciton2">
+
+          <button>
+
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+              class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
+              <path
+                d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132" />
+            </svg>
+          </button>
+
+        </div>
+        <div class="middle_sec">
+          <button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill"
+              viewBox="0 0 16 16">
+              <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+            </svg>
+          </button>
+        </div>
+
+
+        <div class="card_img_div">
+          <img src="./public/images.jpg" alt="" srcset="">
+        </div>
+
+        <div class="content_card_div">
+          <h2>Apple Mac book 4 </h2>
+          <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quae magnam laborum suscipit consequuntur,
+          </h5>
+          <h5>401 ر.س</h5>
+
+          <div class="button_div">
+            <button>شراء</button>
+            <h4>تقييم المنتج: 10/10</h4>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="card">
+
+        <div class="uper_seciton2">
+
+          <button>
+
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+              class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
+              <path
+                d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132" />
+            </svg>
+          </button>
+
+        </div>
+        <div class="middle_sec">
+          <button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill"
+              viewBox="0 0 16 16">
+              <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+            </svg>
+          </button>
+        </div>
+
+
+        <div class="card_img_div">
+          <img src="./public/images.jpg" alt="" srcset="">
+        </div>
+
+        <div class="content_card_div">
+          <h2>Apple Mac book 4 </h2>
+          <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quae magnam laborum suscipit consequuntur,
+          </h5>
+          <h5>401 ر.س</h5>
+
+          <div class="button_div">
+            <button>شراء</button>
+            <h4>تقييم المنتج: 10/10</h4>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="card">
+
+        <div class="uper_seciton2">
+
+          <button>
+
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+              class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
+              <path
+                d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132" />
+            </svg>
+          </button>
+
+        </div>
+        <div class="middle_sec">
+          <button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill"
+              viewBox="0 0 16 16">
+              <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+            </svg>
+          </button>
+        </div>
+
+
+        <div class="card_img_div">
+          <img src="./public/images.jpg" alt="" srcset="">
+        </div>
+
+        <div class="content_card_div">
+          <h2>Apple Mac book 4 </h2>
+          <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quae magnam laborum suscipit consequuntur,
+          </h5>
+          <h5>401 ر.س</h5>
+
+          <div class="button_div">
+            <button>شراء</button>
+            <h4>تقييم المنتج: 10/10</h4>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="card">
+
+        <div class="uper_seciton2">
+
+          <button>
+
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+              class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
+              <path
+                d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132" />
+            </svg>
+          </button>
+
+        </div>
+        <div class="middle_sec">
+          <button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill"
+              viewBox="0 0 16 16">
+              <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+            </svg>
+          </button>
+        </div>
+
+
+        <div class="card_img_div">
+          <img src="./public/images.jpg" alt="" srcset="">
+        </div>
+
+        <div class="content_card_div">
+          <h2>Apple Mac book 4 </h2>
+          <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quae magnam laborum suscipit consequuntur,
+          </h5>
+          <h5>401 ر.س</h5>
+
+          <div class="button_div">
+            <button>شراء</button>
+            <h4>تقييم المنتج: 10/10</h4>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="card">
+
+        <div class="uper_seciton2">
+
+          <button>
+
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+              class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
+              <path
+                d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132" />
+            </svg>
+          </button>
+
+        </div>
+        <div class="middle_sec">
+          <button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill"
+              viewBox="0 0 16 16">
+              <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+            </svg>
+          </button>
+        </div>
+
+
+        <div class="card_img_div">
+          <img src="./public/images.jpg" alt="" srcset="">
+        </div>
+
+        <div class="content_card_div">
+          <h2>Apple Mac book 4 </h2>
+          <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quae magnam laborum suscipit consequuntur,
+          </h5>
+          <h5>401 ر.س</h5>
+
+          <div class="button_div">
+            <button>شراء</button>
+            <h4>تقييم المنتج: 10/10</h4>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="card">
+
+        <div class="uper_seciton2">
+
+          <button>
+
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+              class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
+              <path
+                d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132" />
+            </svg>
+          </button>
+
+        </div>
+        <div class="middle_sec">
+          <button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill"
+              viewBox="0 0 16 16">
+              <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+            </svg>
+          </button>
+        </div>
+
+
+        <div class="card_img_div">
+          <img src="./public/images.jpg" alt="" srcset="">
+        </div>
+
+        <div class="content_card_div">
+          <h2>Apple Mac book 4 </h2>
+          <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quae magnam laborum suscipit consequuntur,
+          </h5>
+          <h5>401 ر.س</h5>
+
+          <div class="button_div">
+            <button>شراء</button>
+            <h4>تقييم المنتج: 10/10</h4>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="card">
+
+        <div class="uper_seciton2">
+
+          <button>
+
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+              class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
+              <path
+                d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132" />
+            </svg>
+          </button>
+
+        </div>
+        <div class="middle_sec">
+          <button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill"
+              viewBox="0 0 16 16">
+              <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+            </svg>
+          </button>
+        </div>
+
+
+        <div class="card_img_div">
+          <img src="./public/images.jpg" alt="" srcset="">
+        </div>
+
+        <div class="content_card_div">
+          <h2>Apple Mac book 4 </h2>
+          <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quae magnam laborum suscipit consequuntur,
+          </h5>
+          <h5>401 ر.س</h5>
+
+          <div class="button_div">
+            <button>شراء</button>
+            <h4>تقييم المنتج: 10/10</h4>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="card">
+
+        <div class="uper_seciton2">
+
+          <button>
+
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+              class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
+              <path
+                d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132" />
+            </svg>
+          </button>
+
+        </div>
+        <div class="middle_sec">
+          <button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill"
+              viewBox="0 0 16 16">
+              <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+            </svg>
+          </button>
+        </div>
+
+
+        <div class="card_img_div">
+          <img src="./public/images.jpg" alt="" srcset="">
+        </div>
+
+        <div class="content_card_div">
+          <h2>Apple Mac book 4 </h2>
+          <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quae magnam laborum suscipit consequuntur,
+          </h5>
+          <h5>401 ر.س</h5>
+
+          <div class="button_div">
+            <button>شراء</button>
+            <h4>تقييم المنتج: 10/10</h4>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="card">
+
+        <div class="uper_seciton2">
+
+          <button>
+
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+              class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
+              <path
+                d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132" />
+            </svg>
+          </button>
+
+        </div>
+        <div class="middle_sec">
+          <button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill"
+              viewBox="0 0 16 16">
+              <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+            </svg>
+          </button>
+        </div>
+
+
+        <div class="card_img_div">
+          <img src="./public/images.jpg" alt="" srcset="">
+        </div>
+
+        <div class="content_card_div">
+          <h2>Apple Mac book 4 </h2>
+          <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quae magnam laborum suscipit consequuntur,
+          </h5>
+          <h5>401 ر.س</h5>
+
+          <div class="button_div">
+            <button>شراء</button>
+            <h4>تقييم المنتج: 10/10</h4>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="card">
+
+        <div class="uper_seciton2">
+
+          <button>
+
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+              class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
+              <path
+                d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132" />
+            </svg>
+          </button>
+
+        </div>
+        <div class="middle_sec">
+          <button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill"
+              viewBox="0 0 16 16">
+              <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+            </svg>
+          </button>
+        </div>
+
+
+        <div class="card_img_div">
+          <img src="./public/images.jpg" alt="" srcset="">
+        </div>
+
+        <div class="content_card_div">
+          <h2>Apple Mac book 4 </h2>
+          <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quae magnam laborum suscipit consequuntur,
+          </h5>
+          <h5>401 ر.س</h5>
+
+          <div class="button_div">
+            <button>شراء</button>
+            <h4>تقييم المنتج: 10/10</h4>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="card">
+
+        <div class="uper_seciton2">
+
+          <button>
+
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+              class="bi bi-bag-heart-fill" viewBox="0 0 16 16">
+              <path
+                d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132" />
+            </svg>
+          </button>
+
+        </div>
+        <div class="middle_sec">
+          <button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill"
+              viewBox="0 0 16 16">
+              <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+            </svg>
+          </button>
+        </div>
+
+
+        <div class="card_img_div">
+          <img src="./public/images.jpg" alt="" srcset="">
+        </div>
+
+        <div class="content_card_div">
+          <h2>Apple Mac book 4 </h2>
+          <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quae magnam laborum suscipit consequuntur,
+          </h5>
+          <h5>401 ر.س</h5>
+
+          <div class="button_div">
+            <button>شراء</button>
+            <h4>تقييم المنتج: 10/10</h4>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="show_more">
+      <button class="show_more_btn">المزيد</button>
+    </div>
   </div>
 
 
@@ -235,7 +1014,7 @@
 
 
   <script src="main.js"></script>
-
+  <script src="./page/loading/loading.js"></script>
 
 </body>
 
