@@ -398,7 +398,7 @@ tr:hover {
 .submit {
     background-color: greenyellow;
     color: white;
-    font-size: larger;
+    font-size: medium;
     border: none;
     outline: none;
     height: 40px;
@@ -422,7 +422,7 @@ tr:hover {
     border: none;
     font-size: medium;
     width: 70px;
-    height: 30px;
+    height: 40px;
 
 }
 
