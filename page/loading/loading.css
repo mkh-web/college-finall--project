@@ -11,10 +11,10 @@
     height: 100vh;
     background-color: #161616;
     transition: 1s;
-    
 }
 
 .logo-header{
+    overflow: hidden;
     position: absolute;
     top: 40%;
     left: 50%;

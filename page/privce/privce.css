@@ -1,0 +1,243 @@
+/*اساسيات - basics*/
+@import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Tajawal', sans-serif;
+  overflow-x: hidden;
+}
+
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+input {
+  outline: none;
+}
+
+
+
+
+/*اساسيات - basics*/
+
+/*شريط التمرير - scroll bar*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #161616;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/*شريط التمرير - scroll bar*/
+
+/*header*/
+
+.header_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  width: 100%;
+  overflow-x: clip;
+
+  background-color: white;
+  transition: 1s ease-in-out;
+  box-shadow: 0px 0px 15px -9px rgba(0, 0, 0, 0.75);
+
+}
+
+.header_box1 {
+  margin-right: 25px;
+  margin-left: 25px;
+  button {
+    transition: 0.5s ease-in-out;
+    background-color: #e09f55;
+    font-size: larger;
+    font-weight: 600;
+    border-radius: 15px;
+    width: 80px;
+    height: 40px;
+    
+    a{
+    color: white;
+}
+}
+}
+
+.header_box1 button:hover{
+    
+    transition: 0.5s ease-in-out;
+        background-color: white;
+        a{
+        color:#e09f55 ;
+        }
+}
+
+.header_box1 img {
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+}
+
+.header_list {
+  display: flex;
+  gap: 100px;
+}
+
+.privce_opaiton{
+  background-color: white;
+  display: flex;
+  border-bottom: #161616 1px solid;
+}
+/*body*/
+.container {
+
+  margin: 10px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.container_privce{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.text_for_privce{
+  margin: 25px;
+
+  ul li,h3,button{
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+}
+.soical_media{
+  background-color: #4d4d4d;
+  border-radius: 8px;
+  font-size: 20px;
+  padding: 5px;
+  color: white;
+}
+
+/*FOOTER*/
+
+footer {
+  background-color: #161616;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer_sec {
+  padding: 5px;
+  color: white;
+  text-align: center;
+}
+
+.footer_sec h1 {
+  margin-bottom: 0px;
+}
+
+.footer_sec h2 {
+  color: orange;
+  margin: 0px;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  padding-right: 0px;
+
+  color: white;
+
+  gap: 25px;
+  list-style: none;
+  transition: 0.5s ease-in-out;
+}
+
+
+.tp_page .list li {
+  border: #161616 1px solid;
+  transition: 0.5s ease-in-out;
+}
+
+.tp_page .list li a {
+  color: white;
+}
+
+.tp_page .list li {
+  border: #161616 1px solid;
+  transition: 0.5s ease-in-out;
+  color: white;
+}
+
+.soical svg {
+  transition: 0.5s ease-in-out;
+  opacity: 0.5;
+  width: 20px;
+  height: 20px;
+}
+
+.soical svg:hover {
+  transition: 0.5s ease-in-out;
+  opacity: 1;
+
+}
+
+.privce {
+  text-align: center;
+  color: gray;
+}
+
+.copyright {
+  background-color: black;
+  color: white;
+  text-align: center;
+  opacity: 0.5;
+}
+
+@media only screen and (max-width:768px) {
+
+  .container_privce{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+}

@@ -1,38 +1,14 @@
 const obj = {
-    intro : document.querySelector('.intro'),
-     logo : document.querySelector('.logo-header'),
-    logospan : document.querySelectorAll('.logo'),
+    click_to_sucess : document.getElementById('click_to_sucess'),
+    sucess : document.getElementById('sucess'),
 }
 
-window.addEventListener("DOMContentLoaded", ()=>{
+obj.click_to_sucess.addEventListener("click",()=>{
+    obj.sucess.classList.remove("hide")
 
-    setTimeout(()=>{
-
-//هنا يصير انمشين الظهور
-        obj.logospan.forEach((span, idx)=>{
-            setTimeout(()=>{
-                span.classList.add('active')
-            }, (idx + 1) * 400)
-        })
-
-        
-        setTimeout(()=>{
-            obj.logospan.forEach((span,idx)=>{
-                setTimeout(() => {
-                    span.classList.remove('active')
-                    span.classList.add('fade')
-                    
-                },(idx + 1) * 50 );
-            })
-        },2000)
-
-
-        setTimeout(()=>{
-            obj.intro.style.top="-100vh";
-        },2300)
-
-
-    })
+    setTimeout(()=> {
+        obj.sucess.classList.add("hide");
+      }, 5000);
 })
 
 
