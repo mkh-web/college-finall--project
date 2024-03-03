@@ -302,11 +302,15 @@ footer{
 
 
 @media only screen and (max-width:720px) {
-  *{
-  transition: 0.5s ease-in-out;
 
+  .box1{
+    overflow: auto !important;
+    
+    canvas{
+      
+      width: 410px;
+    }
   }
-
   .header_continer div{
     margin: 5px;
   }
@@ -331,6 +335,15 @@ footer{
 display: none;
   }
 
+  .continer{
+    overflow: auto;
+    width: 410px;
+  }
+  tr:has(th){
+    background-color: #161616;
+    color: white;
+    opacity: 1;
+  }
   
 }
 .show{
