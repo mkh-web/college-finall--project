@@ -12,7 +12,7 @@ window.addEventListener("DOMContentLoaded", ()=>{
         obj.logospan.forEach((span, idx)=>{
             setTimeout(()=>{
                 span.classList.add('active')
-            }, )
+            }, (idx + 1) * 400)
         })
 
         
@@ -24,21 +24,15 @@ window.addEventListener("DOMContentLoaded", ()=>{
                     
                 },(idx + 1) * 50 );
             })
-        },)
+        },2000)
 
 
         setTimeout(()=>{
             obj.intro.style.top="-100vh";
-        },)
+        },2300)
 
 
     })
 })
-
-
-//هذة الاوقات تنحط بس في حال كانت الصفحة ما راح تنتشر
-//(idx + 1) * 400
-//2000
-//2300
 
 

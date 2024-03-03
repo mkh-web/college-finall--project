@@ -274,10 +274,8 @@ hr{
     width: 100%;
     margin-right: 10px;
     border-radius: 5px;
-    border: #444444 1px solid;
     grid-area: card;
     overflow: hidden;
-    background-color: #161616;
 }
 
 /*end of gird code*/
@@ -520,7 +518,17 @@ width:100%;
 }
 
 /*---------- SLIDE ANIMATION --------------*/
+.swiper {
+    width: 650px;
+    height: 200px;
+  }
 
+  .swiper-slide img{
+      width: inherit;
+      height:inherit;
+      object-fit: cover;
+  }
+  
 
 @keyframes slide_animation{
     0% {left:0px;}

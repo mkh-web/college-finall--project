@@ -402,6 +402,7 @@ tr:hover {
     border: none;
     outline: none;
     height: 40px;
+    width: 70px;
 }
 
 .banned {
@@ -410,7 +411,7 @@ tr:hover {
     outline: none;
     border: none;
     font-size: medium;
-    width: 50px;
+    width: 70px;
     height: 40px;
 
 }

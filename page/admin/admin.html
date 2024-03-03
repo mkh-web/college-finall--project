@@ -14,6 +14,11 @@
     <link rel="stylesheet" href="./../loading/loading.css">
 
 
+<!--siwper js-->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
 </head>
 <body dir="rtl">
 <!---في حال دخلها من الجوال-->
@@ -117,6 +122,18 @@
             <p class="idf">ادارة عامة</p>
             <nav>
                 <ul class="btn-list">
+                    <a href="./add_catgor/add_catgot.html">
+
+                        <li class="btn-for-job">
+                            
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-card-checklist" viewBox="0 0 16 16">
+                                <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z"/>
+                                <path d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0M7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0"/>
+                              </svg>
+                            <p class="des-for-svg"> تصانيف </p>
+                            
+                        </li>
+                    </a>
                     <a href="./transaction/transaction .html">
 
                         <li class="btn-for-job ">
@@ -479,19 +496,30 @@
 
                 <div class="card">
 
-                    <div class="slider-frame">
-                        <div class="slide-images">
-                                <div class="img-container">
-                                    <img src="../../public/xd.png">
-                                </div>
-                                <div class="img-container">
-                                    <img src="../../public/xd.png">
-                                </div>
-                                <div class="img-container">
-                                    <img src="../../public/xd.png">
-                                </div>
-                        </div>
-                    </div>  
+                    <div class="slide_show">
+      
+  
+                        <!-- Slider main container -->
+              <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide"><img src="./../../public/images (1).jpg" alt="" srcset=""></div>
+                  <div class="swiper-slide"><img src="./../../public/images (1).jpg" alt="" srcset=""></div>
+                  <div class="swiper-slide"><img src="./../../public/images (1).jpg" alt="" srcset=""></div>
+              
+                </div>
+              
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              
+              
+              </div>
+              
+              
+              
+                  </div>
                       
                 </div>
             </div>
@@ -558,5 +586,30 @@
           config)
     
     </script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+      <script>
+        const swiper = new Swiper('.swiper', {
+      // Optional parameters
+      direction: 'vertical',
+      loop: true,
+    
+      // If we need pagination الاسهم
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    });
+      </script>
 </body>
 </html>
