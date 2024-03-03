@@ -495,20 +495,9 @@ footer {
 
   .container {
     max-width: 768px;
-    margin: 5px 1px;
+    margin: 25px 1px;
 
-    grid-template-areas:
-      " slide_show"
-      "trends"
-      "news"
-      "most_product"
-      "deals"
-      "panel"
-      "show_products "
-      "genral_product "
-      "show_more "
-    ;
-
+   
   }
 
 
@@ -529,35 +518,6 @@ footer {
 
   }
 
-  .panel {
-    width: 400px;
-    margin-right: 0px;
-  }
-
-  .first_panel {
-    width: 195px;
-    height: 130px;
-  }
-
-  .second_panel {
-    width: 205px;
-    height: 130px;
-  }
-
-  .third_panel {
-    width: 195px;
-    height: 130px;
-  }
-
-  .forth_panel {
-    width: 205px;
-    height: 130px;
-  }
-
-  .trends {
-    width: 410px;
-
-  }
 
   .most_product {
     flex-direction: column;
@@ -602,7 +562,7 @@ footer {
       font-size: larger;
       font-weight: 600;
       border-radius: 15px;
-      width: 130px;
+      width: 140px;
       height: 40px;
     }
     
@@ -618,6 +578,7 @@ footer {
   
   .catagorize  {
     position: relative;
+    display: block;
     width: 430px;
     flex-wrap: wrap;
     overflow-x: auto !important;

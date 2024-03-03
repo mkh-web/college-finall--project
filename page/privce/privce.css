@@ -229,8 +229,14 @@ footer {
   text-align: center;
   opacity: 0.5;
 }
+.bi{
+  margin-left: 25px;
+}
 
 @media only screen and (max-width:768px) {
+  .bi{
+    margin-left: 0حء;
+  }
 
   .container_privce{
     display: flex;
