@@ -205,7 +205,6 @@
                         <th> موقع العميل</th>
                       <th> اسم المنتج</th>
                       <th>  ملاحظة </th>
-                      <th> الوقت المتوقع للوصول    </th>
              
                       <th>عمليات  </th>
                     </tr>
@@ -215,10 +214,10 @@
                         <td>معصوب اتشب </td>
                         <td> 12345</td>
                       <td>ادمن</td>
-                      <td>ادمن</td>
                       
                       <td>
                           <button class="submit">قبول</button>
+                          <button class="delete">رفض</button>
                     </td>
                 </tr>
                    
@@ -359,8 +358,8 @@
     const data_doughnut ={
            
   labels: [
-    'سليمة',
-    'غير سليمة'
+    'مباعة',
+    'غير مباعة'
   ],
   datasets: [{
     label: 'مقارنة بين المنتجات السليمةوغير السليمة',
@@ -429,7 +428,7 @@
                   },
                   title: {
                     display: true,
-                    text: 'عدد المنتجات السليمة و الغير سليمة',
+                    text: 'عدد المنتجات المباعة و الغير مباعة',
                     font: {
                         size: 20,
                         family:'Tajawal',
