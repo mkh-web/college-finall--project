@@ -16,15 +16,6 @@
 <p>simply by clone the project😄😄</p>
 
 
-           <td> lenovo thinkpad e590</td>
-                    <td> <img src="#" alt="صورة الجهاز"> </td>
-                    <td> 350$</td>
-                    <td>لايوجد</td>
-                    <td>20 </td>
-                    <td>0% </td>
-                    <td>ذكر,انثى </td>
-                    <td>pcgamez </td>
-                    <td>lenovo </td>
 
 
 
