@@ -15,6 +15,9 @@
 <h2>how to install the project?</h2>
 <p>simply by clone the project😄😄</p>
 
+<p>----------------------------------------</p>
+this is a front-end project the back-end verison is not displayed here
+
 
 
 
